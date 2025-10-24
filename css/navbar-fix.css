@@ -1,0 +1,83 @@
+/* Navigation and Footer Fixes for AG House of Bread */
+
+/* Navbar Active Link Fixes - CRITICAL */
+.nav-active {
+    background: linear-gradient(135deg, #1e40af 0%, #ea580c 100%) !important;
+    color: white !important;
+    box-shadow: 0 2px 8px rgba(30, 64, 175, 0.3);
+}
+
+/* Ensure active links are visible */
+.nav-active:hover {
+    background: linear-gradient(135deg, #1e40af 0%, #ea580c 100%) !important;
+    color: white !important;
+}
+
+/* Fix navbar border visibility - COMBINED */
+nav {
+    border-bottom: 4px solid !important;
+    border-image: linear-gradient(90deg, #1e40af 0%, #ea580c 50%, #d97706 100%) 1 !important;
+    background: white !important;
+}
+
+/* Mobile menu active states */
+@media (max-width: 768px) {
+    .mobile-menu-item.active {
+        background: linear-gradient(135deg, #1e40af 0%, #ea580c 100%) !important;
+        color: white !important;
+    }
+}
+
+/* Mobile menu improvements */
+@media (max-width: 768px) {
+    .mobile-menu-item {
+        border-left: 3px solid transparent;
+        transition: all 0.3s ease;
+    }
+
+    .mobile-menu-item:hover {
+        border-left-color: #ea580c;
+        background-color: #f3f4f6;
+    }
+}
+
+/* Footer link improvements */
+.footer-link-enhanced {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.footer-link-enhanced:hover {
+    transform: translateX(3px);
+    color: #ea580c;
+}
+
+/* Footer Text Contrast Fixes - CRITICAL */
+footer {
+    background: linear-gradient(135deg,
+        #1e293b 0%,
+        #1e3a8a 50%,
+        #1e40af 100%) !important;
+}
+
+/* Improve footer link visibility */
+footer a {
+    color: #f1f5f9 !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+footer a:hover {
+    color: #ffffff !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer section improvements */
+footer h3 {
+    color: #ffffff !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+footer .text-gray-300 {
+    color: #e2e8f0 !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}

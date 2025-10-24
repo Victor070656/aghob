@@ -1,0 +1,511 @@
+/* Assemblies Of God House of Bread - Custom Styles */
+
+:root {
+    /* Harmonious AG House of Bread Brand Colors */
+    --ag-primary: #1e40af;             /* Deep Blue - Primary */
+    --ag-primary-light: #2563eb;        /* Light Blue */
+    --ag-primary-dark: #1e3a8a;         /* Darkest Blue */
+
+    /* Warm Accent Colors */
+    --ag-accent: #ea580c;              /* Warm Orange - Main Accent */
+    --ag-accent-light: #f97316;        /* Light Orange */
+    --ag-gold: #d97706;                /* Muted Gold */
+    --ag-gold-light: #f59e0b;          /* Light Gold */
+
+    /* Supporting Grays */
+    --ag-white: #ffffff;
+    --ag-gray-50: #f8fafc;
+    --ag-gray-100: #f1f5f9;
+    --ag-gray-200: #e2e8f0;
+    --ag-gray-300: #cbd5e1;
+    --ag-gray-400: #94a3b8;
+    --ag-gray-500: #64748b;
+    --ag-gray-600: #475569;
+    --ag-gray-700: #334155;
+    --ag-gray-800: #1e293b;
+    --ag-gray-900: #0f172a;
+
+    /* Spiritual Context Colors */
+    --ag-fire: #dc2626;                /* Holy Fire - for live/streaming */
+    --ag-olive: #84cc16;               /* Life/Growth */
+}
+
+/* Typography Enhancements */
+.ag-heading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--ag-primary) 0%, var(--ag-accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.ag-subtitle {
+    color: var(--ag-gray-600);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+/* Custom Button Styles */
+.btn-ag-primary {
+    background: linear-gradient(135deg, var(--ag-primary) 0%, var(--ag-primary-light) 100%);
+    border: none;
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(30, 64, 175, 0.2);
+}
+
+.btn-ag-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(30, 64, 175, 0.3);
+}
+
+.btn-ag-accent {
+    background: linear-gradient(135deg, var(--ag-accent) 0%, var(--ag-accent-light) 100%);
+    border: none;
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(234, 88, 12, 0.2);
+}
+
+.btn-ag-accent:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(234, 88, 12, 0.3);
+}
+
+.btn-ag-gold {
+    background: linear-gradient(135deg, var(--ag-gold-light) 0%, var(--ag-gold) 100%);
+    border: none;
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-weight: 600;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(217, 119, 6, 0.2);
+}
+
+.btn-ag-gold:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(217, 119, 6, 0.3);
+}
+
+/* Hero Section Enhancements */
+.hero-ag-gradient {
+    background: linear-gradient(135deg,
+        var(--ag-primary-dark) 0%,
+        var(--ag-primary) 50%,
+        var(--ag-accent) 100%);
+}
+
+/* Church Card Styles */
+.ag-card {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(37, 99, 235, 0.1);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.ag-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(37, 99, 235, 0.15);
+    border-color: rgba(37, 99, 235, 0.2);
+}
+
+.ag-card-header {
+    background: linear-gradient(135deg, var(--ag-primary) 0%, var(--ag-accent) 100%);
+    border-radius: 20px 20px 0 0;
+}
+
+/* Navigation Enhancements */
+.nav-ag-brand {
+    background: linear-gradient(135deg, var(--ag-primary) 0%, var(--ag-accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.nav-ag-active {
+    background: linear-gradient(135deg, var(--ag-primary) 0%, var(--ag-accent) 100%) !important;
+    color: white !important;
+}
+
+/* Footer Styling */
+.footer-ag {
+    background: linear-gradient(135deg,
+        var(--ag-gray-800) 0%,
+        var(--ag-primary-dark) 50%,
+        var(--ag-primary) 100%);
+}
+
+/* Section Divider */
+.ag-section-divider {
+    height: 4px;
+    background: linear-gradient(90deg,
+        var(--ag-primary) 0%,
+        var(--ag-secondary) 50%,
+        var(--ag-gold) 100%);
+    border-radius: 2px;
+}
+
+/* Bible Verse Styling */
+.bible-verse {
+    font-style: italic;
+    position: relative;
+    padding-left: 20px;
+    border-left: 3px solid var(--ag-gold);
+    color: var(--ag-gray-700);
+}
+
+.bible-verse::before {
+    content: '"';
+    position: absolute;
+    left: -5px;
+    top: -10px;
+    font-size: 2em;
+    color: var(--ag-gold);
+    opacity: 0.5;
+}
+
+/* Ministry Icons */
+.ag-ministry-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--ag-primary) 0%, var(--ag-accent) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 15px rgba(30, 64, 175, 0.2);
+}
+
+/* Event Calendar Styling */
+.ag-event-date {
+    background: linear-gradient(135deg, var(--ag-gold-light) 0%, var(--ag-gold) 100%);
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    min-width: 60px;
+    box-shadow: 0 4px 10px rgba(217, 119, 6, 0.2);
+}
+
+/* Sermon Card */
+.ag-sermon-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.ag-sermon-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--ag-primary) 0%, var(--ag-accent) 100%);
+}
+
+/* Prayer Request Card */
+.ag-prayer-card {
+    background: linear-gradient(135deg,
+        var(--ag-gray-50) 0%,
+        rgba(245, 158, 11, 0.05) 100%);
+    border: 2px solid rgba(245, 158, 11, 0.2);
+    border-radius: 20px;
+}
+
+/* Giving Button */
+.ag-giving-button {
+    background: linear-gradient(135deg,
+        var(--ag-olive) 0%,
+        #059669 100%);
+    box-shadow: 0 4px 15px rgba(101, 163, 13, 0.3);
+}
+
+/* Live Stream Indicator */
+.ag-live-indicator {
+    background: var(--ag-fire);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+}
+
+/* Social Media Icons */
+.ag-social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--ag-primary) 0%, var(--ag-accent) 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.ag-social-icon:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 8px 20px rgba(30, 64, 175, 0.3);
+}
+
+/* Testimonial Card */
+.ag-testimonial {
+    background: rgba(37, 99, 235, 0.02);
+    border: 1px solid rgba(37, 99, 235, 0.1);
+    border-radius: 20px;
+    position: relative;
+}
+
+.ag-testimonial::after {
+    content: '"'    ;
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    font-size: 4em;
+    color: var(--ag-primary);
+    opacity: 0.1;
+    font-family: Georgia, serif;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .ag-heading {
+        font-size: 1.75rem;
+    }
+
+    .ag-card {
+        margin-bottom: 1rem;
+    }
+
+    .btn-ag-primary,
+    .btn-ag-secondary,
+    .btn-ag-gold {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Loading Animation */
+.ag-loading {
+    background: linear-gradient(90deg,
+        var(--ag-primary) 25%,
+        var(--ag-secondary) 50%,
+        var(--ag-primary) 75%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+
+/* Church Logo Placeholder */
+.ag-logo-placeholder {
+    background: linear-gradient(135deg,
+        var(--ag-primary) 0%,
+        var(--ag-accent) 50%,
+        var(--ag-gold) 100%);
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Enhanced Navigation Styles */
+.nav-ag-brand {
+    background: linear-gradient(135deg, var(--ag-primary) 0%, var(--ag-accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.nav-border-enhanced {
+    border-image: linear-gradient(90deg,
+        var(--ag-primary) 0%,
+        var(--ag-accent) 35%,
+        var(--ag-gold) 100%) 1;
+    border-top: 4px solid transparent;
+}
+
+/* Navigation Item Colors */
+.nav-home-active { background: linear-gradient(135deg, var(--ag-primary) 0%, var(--ag-primary-light) 100%); }
+.nav-about-active { background: linear-gradient(135deg, var(--ag-primary) 0%, var(--ag-primary-light) 100%); }
+.nav-leadership-active { background: linear-gradient(135deg, var(--ag-accent) 0%, var(--ag-accent-light) 100%); }
+.nav-events-active { background: linear-gradient(135deg, var(--ag-olive) 0%, #22c55e 100%); }
+.nav-sermons-active { background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%); }
+.nav-ministries-active { background: linear-gradient(135deg, var(--ag-gold) 0%, var(--ag-gold-light) 100%); }
+.nav-contact-active { background: linear-gradient(135deg, var(--ag-fire) 0%, #ef4444 100%); }
+
+/* Mobile Navigation Enhancements */
+@media (max-width: 768px) {
+    .mobile-menu-enhanced {
+        background: linear-gradient(135deg,
+            var(--ag-gray-900) 0%,
+            var(--ag-gray-800) 50%,
+            var(--ag-primary) 100%);
+    }
+
+    .mobile-menu-item {
+        border-left: 3px solid transparent;
+        transition: all 0.3s ease;
+    }
+
+    .mobile-menu-item:hover {
+        background: linear-gradient(90deg,
+            var(--ag-gray-50) 0%,
+            var(--ag-gray-100) 100%);
+        border-left-color: var(--ag-accent);
+    }
+}
+
+/* Sticky Navigation Enhancements */
+.nav-sticky-enhanced {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.95);
+}
+
+/* Footer Link Enhancements */
+.footer-link-enhanced {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.footer-link-enhanced:hover {
+    transform: translateX(5px);
+}
+
+.footer-link-enhanced::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: var(--ag-accent);
+    transition: width 0.3s ease;
+}
+
+.footer-link-enhanced:hover::after {
+    width: 100%;
+}
+
+/* Admin Sidebar Responsive Styles */
+.admin-sidebar {
+    transition: transform 0.3s ease-in-out;
+}
+
+.admin-sidebar-open {
+    transform: translateX(0) !important;
+}
+
+.admin-sidebar-closed {
+    transform: translateX(-100%) !important;
+}
+
+@media (min-width: 1024px) {
+    .admin-sidebar-closed {
+        transform: translateX(0) !important;
+    }
+}
+
+/* Sidebar overlay for mobile */
+.sidebar-overlay {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.sidebar-overlay-active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.sidebar-overlay-inactive {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Mobile menu animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.sidebar-slide-in {
+    animation: slideIn 0.3s ease-out;
+}
+
+.sidebar-slide-out {
+    animation: slideOut 0.3s ease-out;
+}
+
+/* Admin responsive improvements */
+@media (max-width: 640px) {
+    .admin-mobile-menu {
+        padding: 0.75rem;
+    }
+
+    .admin-mobile-text {
+        font-size: 0.875rem;
+    }
+
+    .admin-mobile-icon {
+        font-size: 0.875rem;
+    }
+}
+
+/* Tablet adjustments */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .admin-sidebar {
+        width: 240px !important;
+    }
+}
+
+/* Prevent text wrapping in sidebar links */
+@media (max-width: 640px) {
+    #sidebar nav a {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #sidebar nav a span {
+        min-width: 0;
+    }
+}
