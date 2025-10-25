@@ -123,14 +123,14 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
                 <a href="<?= SITE_URL ?>/index.php" class="flex items-center space-x-3 group flex-shrink-0">
-                    <?php if (!empty($settings['logo'])): ?>
+                    <?php if (empty($settings['logo'])): ?>
                         <div
                             class="w-14 h-14 ag-logo-placeholder text-white rounded-xl flex items-center justify-center group-hover:shadow-lg transition-all flex-shrink-0">
                             <i class="fas fa-dove text-2xl"></i>
                         </div>
                     <?php else: ?>
                         <img src="<?= SITE_URL . '/' . $settings['logo'] ?>"
-                            alt="<?= htmlspecialchars($settings['site_name']) ?>"
+                            alt=""
                             class="h-10 group-hover:scale-110 transition-transform">
                     <?php endif; ?>
                     <div class="hidden md:block">

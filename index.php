@@ -102,20 +102,21 @@ $pastors = fetchAll("SELECT * FROM pastors WHERE is_active = 1 ORDER BY FIELD(po
 <section class="relative text-white overflow-hidden" style="min-height: 100vh;">
     <!-- Background Image with Overlay -->
     <div class="absolute inset-0">
-        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Bread and Wheat Field" class="w-full h-full object-cover">
+        <!-- <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Bread and Wheat Field" class="w-full h-full object-cover"> -->
+        <img src="<?= SITE_URL . '/images/002.jpg' ?>" alt="Bread and Wheat Field" class="w-full h-full object-cover">
         <div class="absolute inset-0 gradient-bg"></div>
     </div>
 
     <!-- Animated Pattern Overlay -->
     <div class="absolute inset-0 opacity-10">
-        <div
-            class="absolute top-20 left-10 w-96 h-96 rounded-full mix-blend-multiply filter blur-3xl animate-[float_6s_ease-in-out_infinite]" style="background: var(--ag-primary);">
+        <div class="absolute top-20 left-10 w-96 h-96 rounded-full mix-blend-multiply filter blur-3xl animate-[float_6s_ease-in-out_infinite]"
+            style="background: var(--ag-primary);">
         </div>
-        <div
-            class="absolute top-40 right-20 w-96 h-96 rounded-full mix-blend-multiply filter blur-3xl animate-[float_8s_ease-in-out_infinite]" style="background: var(--ag-secondary);">
+        <div class="absolute top-40 right-20 w-96 h-96 rounded-full mix-blend-multiply filter blur-3xl animate-[float_8s_ease-in-out_infinite]"
+            style="background: var(--ag-secondary);">
         </div>
-        <div
-            class="absolute bottom-32 left-1/3 w-96 h-96 rounded-full mix-blend-multiply filter blur-3xl animate-[float_7s_ease-in-out_infinite]" style="background: var(--ag-gold);">
+        <div class="absolute bottom-32 left-1/3 w-96 h-96 rounded-full mix-blend-multiply filter blur-3xl animate-[float_7s_ease-in-out_infinite]"
+            style="background: var(--ag-gold);">
         </div>
     </div>
 
@@ -135,7 +136,8 @@ $pastors = fetchAll("SELECT * FROM pastors WHERE is_active = 1 ORDER BY FIELD(po
                 class="text-5xl md:text-7xl lg:text-8xl font-black mb-8 leading-tight animate-[fadeInUp_0.8s_ease-out_0.2s_both]">
                 <span class="block">Assemblies of God </span>
                 <span
-                    class="block text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-orange-400 to-yellow-500">House of Bread</span>
+                    class="block text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-orange-400 to-yellow-500">House
+                    of Bread</span>
             </h1>
 
             <!-- Subtitle -->
@@ -245,7 +247,7 @@ $pastors = fetchAll("SELECT * FROM pastors WHERE is_active = 1 ORDER BY FIELD(po
 
                 <!-- Main Image with Better Quality -->
                 <div class="relative z-10">
-                    <img src="<?= SITE_URL ?>/images/05.jpg" alt="Church Community Worship"
+                    <img src="<?= SITE_URL ?>/images/005.jpg" alt="Church Community Worship"
                         class="rounded-3xl shadow-2xl w-full h-[500px] object-cover transform hover:scale-105 transition-transform duration-500">
 
                     <!-- Overlay Badge -->
@@ -254,7 +256,7 @@ $pastors = fetchAll("SELECT * FROM pastors WHERE is_active = 1 ORDER BY FIELD(po
                         <div class="flex items-center justify-between">
                             <div>
                                 <p class="text-sm text-gray-600 mb-1">Join Us Every Sunday</p>
-                                <p class="text-2xl font-bold text-gray-900">9:00 AM & 11:00 AM</p>
+                                <p class="text-2xl font-bold text-gray-900">8:00 AM</p>
                             </div>
                             <div
                                 class="w-16 h-16 bg-gradient-to-br from-amber-600 to-yellow-600 rounded-full flex items-center justify-center">
@@ -272,7 +274,8 @@ $pastors = fetchAll("SELECT * FROM pastors WHERE is_active = 1 ORDER BY FIELD(po
                 </div>
                 <h2 class="ag-heading text-4xl md:text-6xl font-black mb-6 leading-tight">
                     Welcome to AG <span
-                        class="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-orange-700 to-yellow-700">House of Bread</span>
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-orange-700 to-yellow-700">House
+                        of Bread</span>
                 </h2>
                 <p class="text-xl text-gray-600 mb-8 leading-relaxed">
                     <?= htmlspecialchars($settings['about_text'] ?? 'The Assemblies of God House of Bread is a vibrant Pentecostal community dedicated to spreading the Gospel, empowered by the Holy Spirit, and transforming lives through the living bread of Jesus Christ.') ?>
@@ -490,7 +493,7 @@ $pastors = fetchAll("SELECT * FROM pastors WHERE is_active = 1 ORDER BY FIELD(po
                 $imgIndex = 0;
                 foreach (array_slice($featuredSermons, 0, 6) as $sermon): ?>
                     <a href="<?= SITE_URL ?>/pages/sermon-details.php?id=<?= $sermon['id'] ?>"
-                       class="group bg-white/10 backdrop-blur-xl rounded-3xl overflow-hidden shadow-2xl card-hover border border-white/20 hover:border-white/40 transition-all block">
+                        class="group bg-white/10 backdrop-blur-xl rounded-3xl overflow-hidden shadow-2xl card-hover border border-white/20 hover:border-white/40 transition-all block">
                         <div class="relative h-56 overflow-hidden">
                             <?php if ($sermon['thumbnail']): ?>
                                 <img src="<?= SITE_URL . '/' . $sermon['thumbnail'] ?>"
@@ -590,7 +593,7 @@ $pastors = fetchAll("SELECT * FROM pastors WHERE is_active = 1 ORDER BY FIELD(po
                 <p class="text-xl text-gray-600 max-w-2xl mx-auto">Find your place to serve and grow</p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 ">
                 <?php
                 $ministryIcons = ['users'];
                 $ministryGradients = [
@@ -796,61 +799,7 @@ $pastors = fetchAll("SELECT * FROM pastors WHERE is_active = 1 ORDER BY FIELD(po
 </section>
 
 <!-- Newsletter -->
-<section class="py-24 bg-gradient-to-br from-gray-50 via-blue-50 to-yellow-50 relative overflow-hidden">
-    <!-- Decorative Elements -->
-    <div class="absolute top-0 left-0 w-96 h-96 bg-blue-200 rounded-full filter blur-3xl opacity-20"></div>
-    <div class="absolute bottom-0 right-0 w-96 h-96 bg-purple-200 rounded-full filter blur-3xl opacity-20"></div>
 
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-        <div
-            class="bg-gradient-to-r from-amber-700 via-yellow-700 to-amber-800 rounded-[2.5rem] shadow-2xl p-12 md:p-16 text-center text-white relative overflow-hidden">
-            <!-- Background Pattern -->
-            <div class="absolute inset-0 opacity-10"
-                style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%23ffffff\' opacity=\'0.4\'%3E%3Ccircle cx=\'10\' cy=\'10\' r=\'2\'/%3E%3Ccircle cx=\'50\' cy=\'50\' r=\'2\'/%3E%3C/g%3E%3C/svg%3E');">
-            </div>
-
-            <!-- Floating Orbs -->
-            <div
-                class="absolute top-0 right-0 w-72 h-72 bg-white/10 rounded-full -mr-36 -mt-36 animate-[float_8s_ease-in-out_infinite]">
-            </div>
-            <div
-                class="absolute bottom-0 left-0 w-72 h-72 bg-yellow-300/10 rounded-full -ml-36 -mb-36 animate-[float_12s_ease-in-out_infinite]">
-            </div>
-
-            <div class="relative">
-                <div class="inline-block mb-8">
-                    <div
-                        class="w-24 h-24 bg-white/20 backdrop-blur-xl rounded-3xl flex items-center justify-center transform rotate-12 hover:rotate-0 transition-transform duration-500">
-                        <i class="fas fa-envelope-open-text text-6xl"></i>
-                    </div>
-                </div>
-                <h2 class="text-4xl md:text-5xl font-black mb-4 leading-tight">Stay Connected</h2>
-                <p class="text-xl mb-10 text-white/90 max-w-xl mx-auto leading-relaxed">
-                    Subscribe for updates on events, sermons, and community news
-                </p>
-
-                <form id="newsletterForm" class="max-w-lg mx-auto">
-                    <div class="flex flex-col sm:flex-row gap-3">
-                        <input type="email" name="email" required placeholder="Enter your email address"
-                            class="flex-1 px-8 py-5 rounded-full text-gray-900 font-medium placeholder:text-gray-500 focus:outline-none focus:ring-4 focus:ring-white/50 shadow-xl">
-                        <button type="submit"
-                            class="group px-10 py-5 bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-300 hover:to-orange-400 text-gray-900 font-bold rounded-full transition-all shadow-2xl hover:shadow-yellow-500/50 hover:scale-105 flex items-center justify-center">
-                            <span class="mr-2">Subscribe</span>
-                            <i class="fas fa-paper-plane group-hover:translate-x-1 transition-transform"></i>
-                        </button>
-                    </div>
-                    <p id="newsletterMessage" class="mt-4 text-sm font-medium"></p>
-                </form>
-
-                <!-- Trust Badge -->
-                <div class="mt-8 flex items-center justify-center gap-2 text-white/70 text-sm">
-                    <i class="fas fa-shield-alt"></i>
-                    <span>We respect your privacy. Unsubscribe anytime.</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <script>
     document.getElementById('newsletterForm').addEventListener('submit', async function (e) {

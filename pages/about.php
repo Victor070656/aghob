@@ -13,7 +13,7 @@ $churchesCount = 15; // Placeholder - you can make this dynamic from a churches 
 <section class="relative text-white py-24 overflow-hidden">
     <!-- Background with AG Gradient -->
     <div class="absolute inset-0 hero-ag-gradient"></div>
-    <div class="absolute inset-0 bg-cover bg-center opacity-40" style="background-image: url('../images/01.jpg');">
+    <div class="absolute inset-0 bg-cover bg-center opacity-40" style="background-image: url('../images/003.jpg');">
     </div>
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center animate-fadeInUp">
@@ -126,9 +126,9 @@ $churchesCount = 15; // Placeholder - you can make this dynamic from a churches 
             <p class="text-xl text-white">Serving our community with dedication and excellence</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- Churches -->
-            <div class="text-center group">
+            <!-- <div class="text-center group">
                 <div
                     class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2 shadow-xl">
                     <i class="fas fa-church text-6xl mb-4 opacity-90 group-hover:scale-110 transition-transform"></i>
@@ -136,7 +136,7 @@ $churchesCount = 15; // Placeholder - you can make this dynamic from a churches 
                     <div class="text-xl text-white">Churches</div>
                     <p class="mt-2 text-sm text-blue-200">Across the region</p>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Presbyters -->
             <div class="text-center group">
@@ -144,7 +144,7 @@ $churchesCount = 15; // Placeholder - you can make this dynamic from a churches 
                     class="bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-2 shadow-xl">
                     <i class="fas fa-users text-6xl mb-4 opacity-90 group-hover:scale-110 transition-transform"></i>
                     <div class="text-6xl font-bold mb-2"><?= $pastorsCount ?></div>
-                    <div class="text-xl text-white">Presbyters</div>
+                    <div class="text-xl text-white">Pastors</div>
                     <p class="mt-2 text-sm text-blue-200">Dedicated spiritual leaders</p>
                 </div>
             </div>
