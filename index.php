@@ -103,7 +103,7 @@ $pastors = fetchAll("SELECT * FROM pastors WHERE is_active = 1 ORDER BY FIELD(po
     <!-- Background Image with Overlay -->
     <div class="absolute inset-0">
         <!-- <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Bread and Wheat Field" class="w-full h-full object-cover"> -->
-        <img src="<?= SITE_URL . '/images/002.jpg' ?>" alt="Bread and Wheat Field" class="w-full h-full object-cover">
+        <img src="<?= SITE_URL . '/images/02.jpg' ?>" alt="Bread and Wheat Field" class="w-full h-full object-cover">
         <div class="absolute inset-0 gradient-bg"></div>
     </div>
 
@@ -247,7 +247,7 @@ $pastors = fetchAll("SELECT * FROM pastors WHERE is_active = 1 ORDER BY FIELD(po
 
                 <!-- Main Image with Better Quality -->
                 <div class="relative z-10">
-                    <img src="<?= SITE_URL ?>/images/005.jpg" alt="Church Community Worship"
+                    <img src="<?= SITE_URL ?>/images/05.jpg" alt="Church Community Worship"
                         class="rounded-3xl shadow-2xl w-full h-[500px] object-cover transform hover:scale-105 transition-transform duration-500">
 
                     <!-- Overlay Badge -->
@@ -455,15 +455,17 @@ $pastors = fetchAll("SELECT * FROM pastors WHERE is_active = 1 ORDER BY FIELD(po
 </section>
 
 <!-- Sermons Section -->
-<section class="py-24 bg-gradient-to-br from-gray-900 via-blue-900 to-yellow-900 text-white relative overflow-hidden">
+<section
+    class="py-24 bg-gradient-to-br from-gray-900/85 via-blue-900/85 to-yellow-900/85 text-white relative overflow-hidden">
     <!-- Background Image -->
-    <div class="absolute inset-0 opacity-5">
-        <img src="https://images.unsplash.com/photo-1507692049790-de58290a4334?w=1920&h=1080&fit=crop&q=80"
-            alt="Bible Study" class="w-full h-full object-cover">
+    <div class="absolute inset-0 opacity-15">
+        <!-- <img src="https://images.unsplash.com/photo-1507692049790-de58290a4334?w=1920&h=1080&fit=crop&q=80"
+            alt="Bible Study" class="w-full h-full object-cover"> -->
+        <img src="<?= SITE_URL ?>/images/cloud-mountains.png" alt="Bible Study" class="w-full h-full object-cover">
     </div>
 
     <!-- Pattern Overlay -->
-    <div class="absolute inset-0 opacity-10"
+    <div class="absolute inset-0 opacity-5"
         style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%23ffffff\' opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/svg%3E');">
     </div>
 
@@ -480,7 +482,7 @@ $pastors = fetchAll("SELECT * FROM pastors WHERE is_active = 1 ORDER BY FIELD(po
         </div>
 
         <?php if (!empty($featuredSermons)): ?>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 justify-items-center">
                 <?php
                 $sermonImages = [
                     'https://images.unsplash.com/photo-1490730141103-6cac27aaab94?w=600&h=400&fit=crop&q=80',

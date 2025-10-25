@@ -7,8 +7,8 @@ require_once __DIR__ . '/../includes/header.php';
 <section class="relative text-white py-16" style="min-height: 60vh;">
     <!-- Background with AG Gradient -->
     <div class="absolute inset-0 hero-ag-gradient"></div>
-    <div class="absolute inset-0 bg-cover bg-center opacity-40 bg-top"
-        style="background-image: url('../images/09.jpg');">
+    <div class="absolute inset-0 bg-cover bg-center opacity-40 "
+        style="background-image: url('../images/08.jpg');">
     </div>
     <div class="max-w-7xl relative mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center">

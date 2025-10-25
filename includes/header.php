@@ -16,6 +16,7 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="shortcut icon" href="<?= SITE_URL . "/" . $settings['logo'] ?>" type="image/x-icon">
     <!-- Assemblies Of God House of Bread Custom CSS -->
     <link rel="stylesheet" href="<?= SITE_URL ?>/css/aghob-custom.css">
     <link rel="stylesheet" href="<?= SITE_URL ?>/css/navbar-fix.css">
@@ -51,16 +52,16 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
         /* Enhanced AG Branding for Navigation */
         .top-bar-ag {
             background: linear-gradient(135deg,
-                var(--ag-primary-dark) 0%,
-                var(--ag-primary) 50%,
-                var(--ag-accent) 100%);
+                    var(--ag-primary-dark) 0%,
+                    var(--ag-primary) 50%,
+                    var(--ag-accent) 100%);
         }
 
         .nav-border-ag {
             background: linear-gradient(90deg,
-                var(--ag-primary) 0%,
-                var(--ag-accent) 50%,
-                var(--ag-gold) 100%);
+                    var(--ag-primary) 0%,
+                    var(--ag-accent) 50%,
+                    var(--ag-gold) 100%);
         }
     </style>
 </head>
@@ -118,7 +119,8 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
     </div>
 
     <!-- Main Navigation -->
-    <nav class="bg-white shadow-xl sticky top-0 z-50 border-b-4" style="border-image: linear-gradient(90deg, #1e40af 0%, #ea580c 50%, #d97706 100%) 1;">
+    <nav class="bg-white shadow-xl sticky top-0 z-50 border-b-4"
+        style="border-image: linear-gradient(90deg, #1e40af 0%, #ea580c 50%, #d97706 100%) 1;">
         <div class="mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
@@ -129,8 +131,7 @@ $currentPage = basename($_SERVER['PHP_SELF'], '.php');
                             <i class="fas fa-dove text-2xl"></i>
                         </div>
                     <?php else: ?>
-                        <img src="<?= SITE_URL . '/' . $settings['logo'] ?>"
-                            alt=""
+                        <img src="<?= SITE_URL . '/' . $settings['logo'] ?>" alt=""
                             class="h-10 group-hover:scale-110 transition-transform">
                     <?php endif; ?>
                     <div class="hidden md:block">

@@ -13,9 +13,9 @@ $churchesCount = 15; // Placeholder - you can make this dynamic from a churches 
 <section class="relative text-white py-24 overflow-hidden">
     <!-- Background with AG Gradient -->
     <div class="absolute inset-0 hero-ag-gradient"></div>
-    <div class="absolute inset-0 bg-cover bg-center opacity-40" style="background-image: url('../images/003.jpg');">
+    <div class="absolute inset-0 bg-cover bg-center opacity-40" style="background-image: url('../images/03.jpg');">
     </div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center animate-fadeInUp">
             <div class="ag-ministry-icon w-24 h-24 mx-auto mb-6">
                 <i class="fas fa-dove text-4xl text-white"></i>
@@ -50,11 +50,14 @@ $churchesCount = 15; // Placeholder - you can make this dynamic from a churches 
                 <?php if ($settings['about_text']): ?>
                     <?= nl2br(htmlspecialchars($settings['about_text'])) ?>
                 <?php else: ?>
-                    <p>The Assemblies of God House of Bread is a vibrant Pentecostal community of Spirit-filled believers dedicated
+                    <p>The Assemblies of God House of Bread is a vibrant Pentecostal community of Spirit-filled believers
+                        dedicated
                         to spreading the Living Bread of Jesus Christ. We are committed to building strong churches,
                         empowering Spirit-led leaders, and transforming lives through the power of the Holy Ghost.</p>
-                    <p>As part of the Assemblies of God fellowship, we are united in our mission to advance God's kingdom through
-                        biblical evangelism, Spirit-led discipleship, anointed worship, and compassionate service to our communities.</p>
+                    <p>As part of the Assemblies of God fellowship, we are united in our mission to advance God's kingdom
+                        through
+                        biblical evangelism, Spirit-led discipleship, anointed worship, and compassionate service to our
+                        communities.</p>
                 <?php endif; ?>
             </div>
         </div>
@@ -255,8 +258,8 @@ $churchesCount = 15; // Placeholder - you can make this dynamic from a churches 
                     <div class="flex-1 text-right pr-8">
                         <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow">
                             <h3 class="text-2xl font-bold text-gray-900 mb-2">Foundation</h3>
-                            <p class="text-gray-600">Establishment of the Northern Rivers District to serve and support
-                                churches in the region</p>
+                            <p class="text-gray-600">Established and operational for over 40 years now, working under
+                                the mandate of the Holy Spirit</p>
                         </div>
                     </div>
                     <div
@@ -275,8 +278,8 @@ $churchesCount = 15; // Placeholder - you can make this dynamic from a churches 
                     <div class="flex-1 text-left pl-8">
                         <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow">
                             <h3 class="text-2xl font-bold text-gray-900 mb-2">Growth & Expansion</h3>
-                            <p class="text-gray-600">Expansion of ministry reach across the Northern Rivers region with
-                                new churches and ministries</p>
+                            <p class="text-gray-600">Expansion of ministry and advancing the kingdom of God through
+                                evangelism and outreaches to bring the lost souls back to Christ.</p>
                         </div>
                     </div>
                 </div>
@@ -285,8 +288,8 @@ $churchesCount = 15; // Placeholder - you can make this dynamic from a churches 
                     <div class="flex-1 text-right pr-8">
                         <div class="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-shadow">
                             <h3 class="text-2xl font-bold text-gray-900 mb-2">Today</h3>
-                            <p class="text-gray-600">Continuing to serve, equip, and empower churches and leaders for
-                                kingdom impact</p>
+                            <p class="text-gray-600">Continuing to serve, equip, and empower the young, old, men and
+                                women, boys and girls for kingdom impact</p>
                         </div>
                     </div>
                     <div
@@ -307,9 +310,9 @@ $churchesCount = 15; // Placeholder - you can make this dynamic from a churches 
             <h2 class="text-4xl font-bold text-gray-900 mb-4">Meet Our Leadership</h2>
             <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-indigo-600 mx-auto mb-6"></div>
             <p class="text-xl text-gray-600 mb-8">Dedicated leaders serving the Northern Rivers District</p>
-            <a href="<?= SITE_URL ?>/pages/presbyters.php"
+            <a href="<?= SITE_URL ?>/pages/pastors.php"
                 class="inline-block bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-xl font-bold hover:from-blue-700 hover:to-indigo-700 transition shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                <i class="fas fa-users mr-2"></i> View All Presbyters
+                <i class="fas fa-users mr-2"></i> View Our Pastors
             </a>
         </div>
     </div>

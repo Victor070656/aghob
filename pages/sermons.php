@@ -55,9 +55,9 @@ $categories = fetchAll("SELECT DISTINCT category FROM sermons WHERE category IS 
 <section class="relative bg-gradient-to-br from-amber-700 via-yellow-700 to-amber-800 text-white overflow-hidden" style="min-height: 60vh;">
     <!-- Background Image -->
     <div class="absolute inset-0">
-        <img src="../images/08.jpg"
+        <img src="../images/06.jpg"
              alt="Bible Study"
-             class="w-full h-full object-cover object-top">
+             class="w-full h-full object-cover ">
         <div class="absolute inset-0 bg-gradient-to-br from-amber-900/70 via-yellow-900/55 to-yellow-800/80"></div>
     </div>
 
